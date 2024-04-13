@@ -23,6 +23,12 @@ header p {
 .container {
     margin-top: 59px;
 }
+
+.start_game {
+    opacity: 0;
+    pointer-events: none;
+
+}
 .btn-red {
     background-color: var(--red);
     color: var(--white);
@@ -68,6 +74,18 @@ header p {
 }
 /* End hero page */
 
+.game_info_list {
+    position: absolute;
+    margin-top: 119px;
+    margin-left: 10px;
+    width: 95%;
+    transition: all 0.3s ease;
+}
+
+.rules {
+    width: 25vh;
+}
+
 @media (min-width: 1200px) {
     .header {
         margin-top: 20px;
@@ -80,13 +98,22 @@ header p {
     }
 
     .hero-image {
-        margin-left: 110px;
-        width: 70vh;
+        margin-left: 10px;
+        width: 80vh;
     }
 
     .btn-red {
         margin-right: 120px;
         margin-bottom: 10px;
+    }
+
+    .rules{
+        width: 50vh;
+    }
+
+    .game_info_list {
+        margin-top: 190px;
+        margin-left: 230px;
     }
 
 }
