@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,600;1,400&display=swap');
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(211, 228, 235);
+}
+
+.header {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+header p {
+    font-size: 150%;
+    margin-left: 50px;
+}
+
+/* Style hero page */
+
+.container {
+    margin-top: 59px;
+}
+.btn-red {
+    background-color: var(--red);
+    color: var(--white);
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.hero-image {
+    width: 50vh;
+}
+
+.btn-red:hover {
+    color: var(--dark-gray);
+}
+
+.hero-btn {
+    box-shadow: 1px 9px 26px -4px rgba(0, 0, 0, 0.66);
+    -webkit-box-shadow: 1px 9px 26px -4px rgba(0, 0, 0, 0.66);
+}
+
+.bg-red {
+    background-color: var(--red);
+}
+.custom-border {
+    border: var(--red) 1px solid;
+    border-radius: 20px;
+    box-shadow: 5px 7px 26px -4px rgba(0, 0, 0, 0.66);
+    -webkit-box-shadow: 5px 7px 26px -4px rgba(0, 0, 0, 0.66);
+    -moz-box-shadow: 5px 7px 26px -4px rgba(0, 0, 0, 0.66);
+}
+
+.text-red {
+    color: var(--red);
+}
+
+.text-brown {
+    color: var(--white);
+}
+
+.custom-icon i {
+    font-size: 50px;
+    color: var(--red);
+}
+/* End hero page */
+
+@media (min-width: 1200px) {
+    .header {
+        margin-top: 20px;
+        margin-left: 620px;
+    }
+
+    header p {
+        font-size: 150%;
+        margin-left: 650px
+    }
+
+    .hero-image {
+        margin-left: 110px;
+        width: 70vh;
+    }
+
+    .btn-red {
+        margin-right: 120px;
+        margin-bottom: 10px;
+    }
+
+}
