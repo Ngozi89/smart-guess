@@ -16,83 +16,69 @@
         </h1>
         <p class="">Fill in the missing alphabet</p>
     </header>
-    <div class="container start_game">
-        <div class="row mt-2 custom-border justify-content-center align-items-center">
-            <div class="col-12 col-md-5 p-4 d-flex align-items-center">
-                <div class="text-container d-flex flex-column align-items-left">
-                    <h2 class="hero-text text-left">Word Guessing Game</h2>
-
-                    <p>Which alphabet is missing to complete the word</p>
-                </div>
-            </div>
-            <div class="col-12 col-md-7 mt-3 d-flex justify-content-center">
-                <img class="hero-image img-fluid" src="assets/images/guess-the-world.jpg" alt="Smart guess">
-            </div>
-            <br>
-            <div id="start_button">
-                <a class="btn btn-red btn-lg text-brown " href="">Play Now</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- GAME INFO -->
-    <div class="container game_info_list" id="infomation">
-        <div class="row mt-2 custom-border justify-content-center align-items-center">
-            <div class="col-12 col-md-5 p-4 d-flex align-items-center">
-                <div class="text-container d-flex flex-column align-items-left">
-                    <h2 class="hero-text text-left">Game Info</h2>
-                <p class="game_info">
-                    1. There are missing alphbat in every word, guess which alphabet are missing and fill the empty box.
-                  </p>
-                  <p class="game_info">
-                    2. You have <span>20</span> seconds</span> to fill all the empty boxes.
-                  </p>
-                  <p class="game_info">
-                    3. Any one you guess correctly it will apear in the box.
-                  </p>
-                  <p class="game_info">
-                    4. The full word will show once timer goes off.
-                  </p>
-                  <p class="game_info">
-                    5. You can not exit the game once you start.
-                  </p>
-                  <p class="game_info">
-                    7. If you are ready, click continue..
-                  </p>
-                
-                  <!-- Buttons -->
-          <div class="game_info" id="buttons">
-            <button class="exit">Exit Quiz</button>
-            <button class="continue">Continue</button>
+          <div class="start_game">
+              <div class="col-md-8">
+              <p class="text-center heading2">Fun General Knowledge Word Gussing Game</p>
+              <img class="text-center logo" src="assets/images/guess-the-world.jpg" alt="Word Gussing">
+              <button class="text-center start-btn">Start Game</button>
           </div>
+          </div>
+
+    <!-- Game info list -->
+    <div class="game_info_list">
+      <img src="assets/images/game-rules.jpg" alt="">
+      <br>
+      <p class="game_info">
+          1. There are missing alphbat in every word, guess which alphabet are missing and fill the empty box.
+        </p>
+       
+        <p class="game_info">
+          2. You have <span>8</span> chances</span> to guess the right word and fill all the empty boxes.
+        </p>
+       
+        <p class="game_info">
+          3. Any one you guess correctly it will apear in the box.
+        </p>
+       
+        <p class="game_info">
+          4. The full word will show once you reach the limit.
+        </p>
+       
+        <p class="game_info">
+          5. You can not exit the game once you start.
+        </p>
+       
+        <p class="game_info">
+          6. If you are ready, click continue.
+        </p>
+        <!-- Buttons -->
+        <div class="buttons game_info">
+          <button class="exit">Exit Quiz</button>
+          <button class="continue">Continue</button>
         </div>
-            </div>
-            <div class="col-12 col-md-7 mt-3 d-flex justify-content-center">
-                <img class="rules img-fluid" src="assets/images/game-rules.jpg" alt="Game Rules">
-            </div>
-            
-        </div>
-    </div>
+  </div>
+  </div>
     <!-- guess-the-world box-->
+        <!-- guess-the-world box-->
     <div class="container guess-the-world">
-        <div class="row mt-2 custom-border justify-content-center align-items-center">
-            <div class="col-12 col-md-5 p-4 d-flex align-items-center">
-                <div class="text-container d-flex flex-column align-items-left">
-    <div class="wrapper">
-        <h1>Guess the Word</h1>
-        <div class="content">
-          <input type="text" class="typing-input" maxlength="1">
-          <div class="inputs"></div>
-          <div class="details">
-            <p class="hint">Hint: <span></span></p>
-            <p class="guess-left">Remaining guesses: <span></span></p>
-            <p class="wrong-letter">Wrong letters: <span></span></p>
-          </div>
-          <button class="reset-btn">Next Que</button>
+      <div class="row mt-2 custom-border justify-content-center align-items-center">
+          <div class="col-12 col-md-5 p-4 d-flex align-items-center">
+              <div class="text-container d-flex flex-column align-items-left">
+  <div class="wrapper quiz_box">
+      <h1>Guess the Word</h1>
+      <div class="content">
+        <input type="text" class="typing-input" maxlength="1">
+        <div class="inputs"></div>
+        <div class="details">
+          <p class="hint">Hint: <span></span></p>
+          <p class="guess-left">Remaining guesses: <span></span></p>
+          <p class="wrong-letter">Wrong letters: <span></span></p>
         </div>
+        <button class="reset-btn">Next Que</button>
       </div>
     </div>
-    </div>      
+  </div>
+  </div>      
 </div>
 </div>
     <footer class="footer mt-auto py-3 dark-bg">

@@ -19,220 +19,284 @@ header p {
 }
 
 /* Style hero page */
-
-.container {
-    margin-top: 59px;
+.start_game {
+  position: relative;
+  width: 90%;
+  height: 480px;
+  background: #d30707;
+  color: white;
+  margin-top: 110px;
+  margin-left: 20px;
 }
 
-#start_button {
-  transition: all 0.3s ease;
+.heading, .heading2 {
+  margin-top: 30px;
+  font-size: 25px;
 }
-.btn-red {
-    background-color: var(--red);
-    color: var(--white);
-    margin-top: 10px;
-    margin-bottom: 30px;
-}
-
-.hero-image {
-    width: 90vh;
-    height: 46vh;
+.logo {
+  width: 80%;
+  height: 160px;
+  margin-top: 40px;
+  margin-left: 35px;
 }
 
-.btn-red:hover {
-    color: var(--dark-gray);
-}
-
-.hero-btn {
-    box-shadow: 1px 9px 26px -4px rgba(0, 0, 0, 0.66);
-    -webkit-box-shadow: 1px 9px 26px -4px rgba(0, 0, 0, 0.66);
-}
-
-.bg-red {
-    background-color: var(--red);
-}
-.custom-border {
-    border: var(--red) 1px solid;
-    border-radius: 20px;
-    box-shadow: 5px 7px 26px -4px rgba(0, 0, 0, 0.66);
-    -webkit-box-shadow: 5px 7px 26px -4px rgba(0, 0, 0, 0.66);
-    -moz-box-shadow: 5px 7px 26px -4px rgba(0, 0, 0, 0.66);
-}
-
-.text-red {
-    color: var(--red);
-}
-
-.text-brown {
-    color: var(--white);
-}
-
-.custom-icon i {
-    font-size: 50px;
-    color: var(--red);
-}
-
-#infomation.activeInfo {
+.game_info_list.activeInfo,
+.quiz_box.activeQuiz {
   z-index: 5;
   opacity: 1;
   pointer-events: auto;
   transform: translate(-50%, -50%) scale(1);
 }
-/* End hero page */
+
+.start-btn {
+  margin-left: 120px;
+  margin-top: 50px;
+  transition: all 0.3s ease;
+}
+
+.start-btn:hover {
+  background: #252525;
+  color: #fff;
+}
 
 .game_info_list {
-    position: absolute;
-    margin-top: 188px;
-    width: 100%;
-    opacity: 0;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    transition: all 0.3s ease;
+  position: absolute;
+  width: 95%;
+  height: 780px;
+  background: #d30707;
+  color: white;
+  margin-top: 480px;
+  margin-left: 195px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
 }
 
-.rules {
-    width: 27vh;
-    margin-bottom: 35px;
+.game_info_list img {
+  width: 30vh;
+  margin-left: 45px;
 }
 
+.game_info {
+  padding: 1px;
+  text-align: left;
+  margin-top: 10%;
+}
+
+.game_info_list .buttons {
+  margin-left: 70px;
+  border-radius: 5px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+
+}
+
+/* Hover button */
+
+.buttons button.exit:hover {
+  background: #d30707;
+  color: #fff;
+}
+
+.buttons button.continue:hover {
+  background: #08ac16;
+  color: #fff;
+}
+
+/* Word Guess Game */
 .guess-the-world {
-    position: absolute;
-    margin-top: 187px;
-    width: 100%;
-    height: 662px;
-    background-color: rgb(211, 228, 235);
-    opacity: 0;
-    pointer-events: none;
+  position: absolute;
+  margin-top: 187px;
+  width: 100%;
+  height: 662px;
+  background-color: rgb(211, 228, 235);
+  
 
 }
 
 .wrapper{
-    width: 430px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-  }
-  .wrapper h1{
-    font-size: 25px;
-    font-weight: 500;
-    padding: 20px 25px;
-    border-bottom: 1px solid #ccc;
-  }
-  .wrapper .content{
-    margin: 25px 25px 35px;
-  }
-  .content .inputs{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .inputs input{
-    height: 57px;
-    width: 56px;
-    margin: 4px;
-    font-size: 24px;
-    font-weight: 500;
-    color: #1ba98c;
-    text-align: center;
-    border-radius: 5px;
-    background: none;
-    /*pointer-events: none;*/
-    text-transform: uppercase;
-    border: 1px solid #B5B5B5;
-  }
-  .typing-input {
-    /*opacity: 0;*/
-    z-index: -999;
-    position: absolute;
-    /*pointer-events: none;*/
-  }
-  .inputs input:first-child{
-    margin-left: 0px;
-  }
-  .content .details{
-    margin: 20px 0 25px;
-  }
-  .details p{
-    font-size: 19px;
-    margin-bottom: 10px;
-  }
-  .content .reset-btn{
-    width: 100%;
-    border: none;
-    cursor: pointer;
-    color: #fff;
-    outline: none;
-    padding: 15px 0;
-    font-size: 17px;
-    border-radius: 5px;
-    background: #1BB295;
-    transition: all 0.3s ease;
-  }
-  .content .reset-btn:hover{
-    background: #18a589;
+  width: 430px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.wrapper h1{
+  font-size: 25px;
+  font-weight: 500;
+  padding: 20px 25px;
+  border-bottom: 1px solid #ccc;
+}
+.wrapper .content{
+  margin: 25px 25px 35px;
+}
+.content .inputs{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.inputs input{
+  height: 57px;
+  width: 56px;
+  margin: 4px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #1ba98c;
+  text-align: center;
+  border-radius: 5px;
+  background: none;
+  pointer-events: none;
+  text-transform: uppercase;
+  border: 1px solid #B5B5B5;
+}
+.typing-input {
+  opacity: 0;
+  z-index: -999;
+  position: absolute;
+  pointer-events: none;
+}
+.inputs input:first-child{
+  margin-left: 0px;
+}
+.content .details{
+  margin: 20px 0 25px;
+}
+.details p{
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+.content .reset-btn{
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+  padding: 15px 0;
+  font-size: 17px;
+  border-radius: 5px;
+  background: #1BB295;
+  transition: all 0.3s ease;
+}
+.content .reset-btn:hover{
+  background: #18a589;
+}
+
+/* Media query for tablets and larger (750 px and up) */
+@media screen and (min-width: 750px) {
+  .start_game {
+      width: 70%;
+      height: 580px;
+      background: #d30707;
+      color: white;
+      margin-top: 110px;
+      margin-left: 120px;
   }
 
-  @media screen and (max-width: 460px) {
-    .wrapper {
-      width: 100%;
-    }
-    .wrapper h1{
-      font-size: 22px;
-      padding: 16px 20px;
-    }
-    .wrapper .content{
-      margin: 25px 20px 35px;
-    }
-    .inputs input{
-      height: 51px;
-      width: 50px;
-      margin: 3px;
-      font-size: 22px;
-    }
-    .details p{
-      font-size: 17px;
-    }
-    .content .reset-btn{
-      padding: 14px 0;
-      font-size: 16px;
-    }
+  .heading {
+      font-size: 40px;
   }
 
-@media (min-width: 1200px) {
-    .header {
-        margin-top: 20px;
-        margin-left: 620px;
-    }
+  .logo {
+      width: 70%;
+      height: 200px;
+      margin-top: 40px;
+      margin-left: 65px;
+  }
+  
+  .start-btn {
+      margin-left: 220px;
+  }
 
-    header p {
-        font-size: 150%;
-        margin-left: 650px
-    }
+  .game_info_list {
+      width: 90%;
+      height: 1280px;
+      margin-top: 110px;
+      margin-left: 20px;
+  }
+  
+  .game_info_list img {
+      width: 30vh;
+      margin-left: 205px;
+  }
+  
+  .game_info {
+      font-size: 28px;
+      margin: 30px;
+      padding: 1px;
+  }
+  
+  .game_info_list .buttons {
+      margin-left: 200px;
+  }
+}
 
-    .hero-image {
-        margin-left: 10px;
-        width: 80vh;
-    }
+  /* Media query for tablets and larger (1200 px and up) */
+@media screen and (min-width: 1200px) {
+  .header {
+    margin-top: 20px;
+    margin-left: 620px;
+}
 
-    .btn-red {
-        margin-right: 120px;
-        margin-bottom: 10px;
-    }
+header p {
+    font-size: 150%;
+    margin-left: 650px
+}
 
-    .rules{
-        width: 60vh;
-        height: 50vh;
-    }
+  .start_game {
+      width: 60vw;
+      margin-left: 20%;
+  }
 
-    .game_info_list {
-        margin-top: 188px;
-        margin-left: 230px;
-    }
+  .heading {
+      font-size: 200%;
+      margin-top: 70px;
+  }
+  
+  .heading2 {
+      margin-left: 230px;
+  }
+  
+  .logo {
+      width: 70%;
+      height: 230px;
+      margin-top: 70px;
+      margin-left: 230px;
+  }
+  
+  .start-btn{
+      position: relative;
+      margin-top: 70px;
+      margin-left: 410px;
+      width: 20%;
+      height: 40px;
+  }
 
-    .guess-the-world {
-        margin-top: 187px;
-        margin-left: 230px;
-        height: 0px;
-    }
+  .game_info_list {
+      width: 65%;
+      height: 700px;
+      margin-top: 499px;
+      margin-left: 780px;
+  }
+  
+  .game_info_list img {
+      width: 30vh;
+      margin-left: 365px;
+  }
+  
+  .game_info {
+      font-size: 20px;
+      margin: 30px;
+      padding: 1px;
+  }
+  
+  .game_info_list .buttons {
+      margin-left: 400px;
+  }
 
+  .guess-the-world {
+    margin-top: 187px;
+    margin-left: 230px;
+    height: 0px;
+}
 }
