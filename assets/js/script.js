@@ -3,6 +3,7 @@ let start_game = document.querySelector(".start_game button");
 let game_info_list = document.querySelector(".game_info_list");
 let exit_btn = game_info_list.querySelector(".buttons .exit");
 let continue_btn = game_info_list.querySelector(".buttons .continue");
+let quiz_box = document.querySelector(".quiz_box");
 let inputs = document.querySelector(".inputs"),
 
 hintTag = document.querySelector(".hint span"),
